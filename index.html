@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/sliders.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1 class="title">Слайдер Swiper</h1>
+		<!-- Параллакс слайдер -->
+		<!-- <div class="parallax-slider swiper-container"> -->
+		<!-- <div class="parallax-slider__bg" data-swiper-parallax="-20%"></div> -->
+		<!-- <div class="parallax-slider__wrapper swiper-wrapper">
+				<div class="parallax-slider__slide swiper-slide">
+					<h2 class="parallax-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">
+						Слайд №1</h2>
+					<div class="parallax-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300"
+						data-swiper-parallax-duration="500">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quia minima non dolore excepturi
+						repellat, unde maiores earum, fugiat magni doloremque ullam nulla at aspernatur consequuntur magnam
+						facere saepe rem.
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quia minima non dolore excepturi
+						repellat, unde maiores earum, fugiat magni doloremque ullam nulla at aspernatur consequuntur magnam
+						facere saepe rem.
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quia minima non dolore excepturi
+						repellat, unde maiores earum, fugiat magni doloremque ullam nulla at aspernatur consequuntur magnam
+						facere saepe rem.
+					</div>
+					<a href="" class="parallax-slider__button" data-swiper-parallax-opacity="0" data-swiper-parallax="-100">Я
+						кнопка</a>
+				</div>
+				<div class="parallax-slider__slide swiper-slide">
+					<h2 class="parallax-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">
+						Слайд №2</h2>
+					<div class="parallax-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300"
+						data-swiper-parallax-duration="500">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quia minima non dolore excepturi
+						repellat, unde maiores earum, fugiat magni doloremque ullam nulla at aspernatur consequuntur magnam
+						facere saepe rem.
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quia minima non dolore excepturi
+						repellat, unde maiores earum, fugiat magni doloremque ullam nulla at aspernatur consequuntur magnam
+						facere saepe rem.
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quia minima non dolore excepturi
+						repellat, unde maiores earum, fugiat magni doloremque ullam nulla at aspernatur consequuntur magnam
+						facere saepe rem.
+					</div>
+					<a href="" class="parallax-slider__button" data-swiper-parallax-opacity="0" data-swiper-parallax="-100">Я
+						кнопка</a>
+				</div>
+				<div class="parallax-slider__slide swiper-slide">
+					<h2 class="parallax-slider__title" data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2">
+						Слайд №3</h2>
+					<div class="parallax-slider__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-300"
+						data-swiper-parallax-duration="500">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quia minima non dolore excepturi
+						repellat, unde maiores earum, fugiat magni doloremque ullam nulla at aspernatur consequuntur magnam
+						facere saepe rem.
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quia minima non dolore excepturi
+						repellat, unde maiores earum, fugiat magni doloremque ullam nulla at aspernatur consequuntur magnam
+						facere saepe rem.
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quia minima non dolore excepturi
+						repellat, unde maiores earum, fugiat magni doloremque ullam nulla at aspernatur consequuntur magnam
+						facere saepe rem.
+					</div>
+					<a href="" class="parallax-slider__button" data-swiper-parallax-opacity="0" data-swiper-parallax="-100">Я
+						кнопка</a>
+				</div>
+			</div> -->
+		<!-- Добавляем если нам нужны стрелки управления -->
+		<!-- <div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div> -->
+		<!-- </div> -->
+		<!-- Флекс контейнер -->
+		<div class="block">
+			<!-- Флекс элемент -->
+			<div class="block__side"></div>
+			<!-- Флекс элемент -->
+			<div class="block__body">
+				<!-- Слайдер + Lazy loading + Zoom -->
+				<div dir="" class="image-slider swiper-container">
+					<!-- Хеш навигация -->
+					<div class="image-slider__wrapper swiper-wrapper">
+						<div data-hash="slide-1" class="image-slider__slide swiper-slide">
+							<div class="image-slider__image swiper-zoom-container">
+								<img data-src="img/labo.png" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+								<div class="swiper-lazy-preloader"></div>
+							</div>
+						</div>
+						<div data-hash="slide-2" class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img data-src="img/damas.png" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+								<div class="swiper-lazy-preloader"></div>
+							</div>
+							<!-- Слайдер в слайдере -->
+							<!-- <div class="image-in-slider swiper-container"> -->
+							<!-- <div class="image-in-slider__wrapper swiper-wrapper">
+									<div class="image-in-slider__slide swiper-slide">
+										<div class="image-in-slider__image">
+											<img data-src="img/captiva5.png" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+											<div class="swiper-lazy-preloader"></div>
+										</div>
+									</div>
+									<div class="image-in-slider__slide swiper-slide">
+										<div class="image-in-slider__image">
+											<img data-src="img/trailblazer.png" src="img/1x1.png" class="swiper-lazy"
+												alt="Картинка">
+											<div class="swiper-lazy-preloader"></div>
+										</div>
+									</div>
+									<div class="image-in-slider__slide swiper-slide">
+										<div class="image-in-slider__image">
+											<img data-src="img/malibu3.png" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+											<div class="swiper-lazy-preloader"></div>
+										</div>
+									</div>
+								</div> -->
+							<!-- Добавляем если нам нужна пагинация -->
+							<!-- <div class="swiper-pagination"></div> -->
+							<!-- </div> -->
+						</div>
+						<div data-hash="slide-3" class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img data-src="img/spark.png" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+								<div class="swiper-lazy-preloader"></div>
+							</div>
+						</div>
+						<div data-hash="slide-4" class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img data-src="img/nexia.png" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+								<div class="swiper-lazy-preloader"></div>
+							</div>
+						</div>
+						<div data-hash="slide-5" class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img data-src="img/cobalt.png" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+								<div class="swiper-lazy-preloader"></div>
+							</div>
+						</div>
+						<div data-hash="slide-6" class="image-slider__slide swiper-slide">
+							<div class="image-slider__image">
+								<img data-src="img/lacetti.png" src="img/1x1.png" class="swiper-lazy" alt="Картинка">
+								<div class="swiper-lazy-preloader"></div>
+							</div>
+						</div>
+					</div>
+					<!-- Добавляем если нам нужны стрелки управления -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					<!-- Добавляем если нам нужна пагинация -->
+					<div class="swiper-pagination"></div>
+					<!-- Фракция -->
+					<div class="image-slider__fraction">
+						<div class="image-slider__current">1</div>
+						<div class="image-slider__sepparator"> / </div>
+						<div class="image-slider__total">6</div>
+					</div>
+					<!-- Добавляем если нам нужна полоса прокрутки (scrollbar) -->
+					<div class="swiper-scrollbar"></div>
+				</div>
+				<!-- <div class="text">Некий разделяющий объект</div> -->
+				<!-- Текстовый слайдер -->
+				<!-- <div class="text-slider swiper-container">
+					<div class="text-slider__wrapper swiper-wrapper">
+						<div class="text-slider__slide swiper-slide">
+							<h2>Слайд №1</h2>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nemo, voluptatibus praesentium non
+							cupiditate animi est, ea voluptatum delectus vitae totam provident quo et dolor. Fugit unde
+							excepturi reiciendis vitae!
+						</div>
+						<div class="text-slider__slide swiper-slide">
+							<h2>Слайд №2</h2>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nemo, voluptatibus praesentium non
+							cupiditate animi est, ea voluptatum delectus vitae totam provident quo et dolor. Fugit unde
+							excepturi reiciendis vitae!
+						</div>
+						<div class="text-slider__slide swiper-slide">
+							<h2>Слайд №3</h2>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nemo, voluptatibus praesentium non
+							cupiditate animi est, ea voluptatum delectus vitae totam provident quo et dolor. Fugit unde
+							excepturi reiciendis vitae!
+						</div>
+						<div class="text-slider__slide swiper-slide">
+							<h2>Слайд №4</h2>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nemo, voluptatibus praesentium non
+							cupiditate animi est, ea voluptatum delectus vitae totam provident quo et dolor. Fugit unde
+							excepturi reiciendis vitae!
+						</div>
+						<div class="text-slider__slide swiper-slide">
+							<h2>Слайд №5</h2>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nemo, voluptatibus praesentium non
+							cupiditate animi est, ea voluptatum delectus vitae totam provident quo et dolor. Fugit unde
+							excepturi reiciendis vitae!
+						</div>
+						<div class="text-slider__slide swiper-slide">
+							<h2>Слайд №6</h2>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nemo, voluptatibus praesentium non
+							cupiditate animi est, ea voluptatum delectus vitae totam provident quo et dolor. Fugit unde
+							excepturi reiciendis vitae!
+						</div>
+					</div>
+				</div> -->
+				<!-- Миниатюры, Превью, Thumbs -->
+				<!-- <div class="image-mini-slider swiper-container">
+					<div class="image-mini-slider__wrapper swiper-wrapper">
+						<div class="image-mini-slider__slide swiper-slide">
+							<div class="image-mini-slider__image">
+								<img src="img/labo.png" alt="Картинка">
+							</div>
+						</div>
+						<div class="image-mini-slider__slide swiper-slide">
+							<div class="image-mini-slider__image">
+								<img src="img/damas.png" alt="Картинка">
+							</div>
+						</div>
+						<div class="image-mini-slider__slide swiper-slide">
+							<div class="image-mini-slider__image">
+								<img src="img/spark.png" alt="Картинка">
+							</div>
+						</div>
+						<div class="image-mini-slider__slide swiper-slide">
+							<div class="image-mini-slider__image">
+								<img src="img/nexia.png" alt="Картинка">
+							</div>
+						</div>
+						<div class="image-mini-slider__slide swiper-slide">
+							<div class="image-mini-slider__image">
+								<img src="img/cobalt.png" alt="Картинка">
+							</div>
+						</div>
+						<div class="image-mini-slider__slide swiper-slide">
+							<div class="image-mini-slider__image">
+								<img src="img/lacetti.png" alt="Картинка">
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script src="js/sliders.js"></script>
+</body>
+
+</html>
